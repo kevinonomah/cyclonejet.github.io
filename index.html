@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AssistManager - Here To Help</title>
+    <meta name="description" content="AssistManager: sales, purchases, inventory and financial reports for small businesses.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+        }
+
+        section {
+            padding: 2rem;
+            font-size: 25px;
+        }
+
+        .navbar {
+            width: 85%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            width: 200px;
+            height: auto;
+        }
+
+        .navbar ul {
+            margin: 0;
+            padding: 0;
+            font-family: fantasy, copperplate, sans-serif;
+            font-size: 28px;
+        }
+
+        .navbar ul li {
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+            position: relative;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #fff;
+            text-transform: uppercase;
+            padding: 10px;
+        }
+
+        .navbar ul li::after {
+            content: '';
+            height: 3px;
+            width: 0;
+            background: orange;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transition: 0.5s;
+        }
+
+        .navbar ul li:hover::after {
+            width: 100%;
+        }
+
+        .hero {
+            background-image: url('images/ofiv.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            color: #fff;
+            font-family: "Stencil Std", fantasy, sans-serif;
+            font-size: 50px;
+            margin: 0;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+        }
+
+        .hero p {
+            color: chocolate;
+            font-family: "Brush Script MT", cursive;
+            font-size: 40px;
+            margin: 0.5rem 0 1.5rem;
+            text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background-color: #ff5722;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 1.5rem;
+        }
+
+        .feature {
+            text-align: center;
+            font-size: 25px;
+            flex: 1 1 200px;
+            max-width: 280px;
+        }
+
+        .feature img {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#"><img src="images/am-sample4.png" class="logo" alt="AssistManager logo"></a>
+            <ul>
+                <li><a href="#sales">Sales</a></li>
+                <li><a href="#purchases">Purchases</a></li>
+                <li><a href="#inventory">Inventory</a></li>
+                <li><a href="#report">Financial Report</a></li>
+                <li><a href="#cta"><img src="images/bgr.png" title="Login" alt="Login" style="width:40px; height:40px; vertical-align:middle;"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>ASSIST MANAGER</h1>
+        <p>Here To Help</p>
+        <a href="#cta" class="cta-btn" style="font-size:30px;">Get Started</a>
+    </section>
+
+    <section>
+        <h2>Financial Books</h2>
+        <div class="features">
+            <div class="feature" id="sales">
+                <img src="images/sales.png" alt="Sales book icon">
+                <h3>Sales Book</h3>
+                <p>A place to manage your daily sales. Record, edit and view your sales.</p>
+            </div>
+            <div class="feature" id="purchases">
+                <img src="images/purchase.jpg" alt="Purchases book icon">
+                <h3>Purchases Book</h3>
+                <p>A place to manage your purchases. Record, edit and view your purchases.</p>
+            </div>
+            <div class="feature" id="inventory">
+                <img src="images/inventory.png" alt="Inventory book icon">
+                <h3>Inventory Book</h3>
+                <p>A space to manage your current inventory. Keep track of current stock and expiry dates.</p>
+            </div>
+            <div class="feature" id="report">
+                <img src="images/fr.png" alt="Financial report icon">
+                <h3>Financial Report</h3>
+                <p>Generate a monthly report to see how your business is doing.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta">
+        <h2>Ready to Get Started?</h2>
+        <p>Contact us now to explore the possibilities.</p>
+        <a href="mailto:assist0manager@gmail.com" class="cta-btn">Contact Us</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 AssistManager. All rights reserved.</p>
+    </footer>
+</body>
+</html>
